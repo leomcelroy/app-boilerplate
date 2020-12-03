@@ -1,0 +1,28 @@
+/* :root {} */
+
+html,
+body {
+  margin: 0px;
+}
+
+.container {
+	display: grid;
+	width: 100vw;
+	height: 100vh;
+	grid-template: 
+		"main toolbar" 100%
+		/ calc(100% - 100px) 1fr;
+}
+
+.main {
+	background: blue;
+}
+
+#section-1 {
+	width: 100%;
+	height: 100%;
+}
+
+.toolbar {
+	background: orange;
+}
