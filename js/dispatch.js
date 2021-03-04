@@ -1,13 +1,7 @@
-import {
-	view
-} from "./view.js";
-import {
-	render
-} from "../libs/lit-html.js";
+import { view } from "./view.js";
+import { render } from "../libs/lit-html.js";
 
-function init(state) {
-
-}
+function init(state) { }
 
 const STATE = {};
 

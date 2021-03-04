@@ -1,17 +1,9 @@
 import { html } from '../libs/lit-html.js';
 
-function toolbar(state) {
+function content(state) {
 	return html`
-		<div>
-			<div>Search Bar</div>
-		</div>
-	`
-}
-
-function map(state) {
-	return html`
-		<div id="section-1">
-			Hello World!
+		<div class="content">
+			content
 		</div>
 	`
 }
@@ -20,8 +12,8 @@ export function view(state) {
 
 	return html `
 		<div class="container">
-			<div class="main">${map(state)}</div>
-			<div class="toolbar"></div>
+			<div class="tools">tools</div>
+			${content(state)}
 		</div>
 	`
 };
