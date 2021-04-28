@@ -11,7 +11,7 @@ const ACTIONS = {
 
 export function dispatch(action, args = {}, rerender = true) {
 	const trigger = ACTIONS[action];
-	if (trigger) trigger(STATE);
+	if (trigger) trigger(args, STATE);
 	else console.log("Action not recongnized:", action);
 
 	if (rerender) {
